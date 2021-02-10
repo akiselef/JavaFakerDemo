@@ -40,8 +40,6 @@ public class JavaFakerDemoSelenide {
         $x("//div[text()='Select City']").click();
         $("#react-select-4-option-1").click();
         $("#submit").click();
-        Selenide.sleep(2000);
-
 
         $x("//td[text()='Student Name']").parent().shouldHave(text(firstName + " " + lastName));
         $x("//td[text()='a@a.com']").shouldBe(visible);
